@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*NAVBAR*/
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+
+}
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    height: 70px;
+    line-height: 70px;
+    background: #ffffff;
+    border-bottom: 2px solid red;
+    position: fixed;
+}
+.logo{
+    width: 200px;
+    float: left;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+.menu li{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    list-style: none;
+}
+.menu li a{
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Bungee', cursive;
+    text-transform: uppercase;
+}
+
+  
+  /*  This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 750px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar{
+        height: 100%;
+        width: 100%;
+        line-height: 100%;
+    }
+    .logo{
+        position: relative;
+        left: 140px;
+    }
+  }
+
+  /*VIDEO*/
+
+
+  #videoTrain{
+      z-index: -1;
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+  }
+  @media (min-aspect-ratio: 16/9){
+      #videoTrain {
+        width: 100%;
+        height: auto;
+  } }
+  @media (max-aspect-ratio: 16/9){
+      #videoTrain{
+        width: auto;
+        height: 100%;
+      }
+  }
+
+
+  /*ABOUT US*/
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+
+
+  /*EQUIPO*/
+.equipo{
+    margin: 10vh 10vh 10vh 10vh;
+}
+
+  /* Four columns side by side */
+.column {
+    float: left;
+    padding: 10px 20px 10px 20px;
+    width: 20%;
+    margin-bottom: 16px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container2 {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container2::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
