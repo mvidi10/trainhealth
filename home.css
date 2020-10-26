@@ -1,11 +1,12 @@
-
+*{
+  margin: 0;
+}
 html {
   scroll-behavior: smooth;
 }
 
-/*body {
-  overflow: hidden; /* Hide scrollbars */
-}
+
+
 
 /*NAVBAR*/
 
@@ -18,7 +19,7 @@ html {
     overflow: hidden;
     height: 70px;
     line-height: 70px;
-    background: #ffffff;
+    background-color: transparent;
     /*border-bottom: 2px solid red;*/
     position: fixed;
 }
@@ -45,6 +46,9 @@ html {
     text-decoration: none;
     font-family: 'Bungee', cursive;
     
+}
+.menu li a:hover{
+  color: lightblue;
 }
 
   
